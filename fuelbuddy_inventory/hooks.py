@@ -154,13 +154,11 @@ after_install = "fuelbuddy_inventory.install.after_install"
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-# 	}
-# }
+doc_events = {
+	"Stock Entry": {
+		"validate": "fuelbuddy_inventory.stock_entry.validate_tank_transfer",
+	},
+}
 
 # Scheduled Tasks
 # ---------------
