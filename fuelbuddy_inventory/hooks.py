@@ -83,7 +83,7 @@ app_license = "mit"
 # ------------
 
 # before_install = "fuelbuddy_inventory.install.before_install"
-# after_install = "fuelbuddy_inventory.install.after_install"
+after_install = "fuelbuddy_inventory.install.after_install"
 
 # Uninstallation
 # ------------
