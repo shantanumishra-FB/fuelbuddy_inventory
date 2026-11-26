@@ -66,7 +66,7 @@ def _add_columns(table, columns):
 	try:
 		frappe.db.sql_ddl(statement)
 	except Exception:
-		print(f"{statement!r} failed and changed nothing; run bench install-app fuelbuddy_inventory again.")
+		print(f"{statement!r} failed and changed nothing; run the same install-app again with --force.")
 		raise
 	finally:
 		frappe.cache.hdel("table_columns", table)
